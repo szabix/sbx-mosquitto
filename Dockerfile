@@ -9,7 +9,7 @@ LABEL maintainer="Szabolcs Toth <szabix@szabix.hu>" \
       org.label-schema.name="mosquitto MQTT Broker with auth-plugin" \
       org.label-schema.description="This project builds mosquitto with auth-plugin. \
       It also has mosquitto_pub, mosquitto_sub and np." \
-      org.label-schema.url="https://cloud.docker.com/u/jllopis/repository/docker/jllopis/mosquitto" \
+      org.label-schema.url="https://hub.docker.com/r/szabix/sbx-mosquitto" \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.vcs-url="https://github.com/szabix/sbx-mosquitto" \
       org.label-schema.version=$VERSION \
