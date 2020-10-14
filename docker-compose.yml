@@ -4,12 +4,10 @@ services:
     image: sbx-mosquitto
     container_name: mosquitto
     volumes:
-      - /opt/SP/mosquitto/config:/mosquitto/config
-      - /opt/SP/mosquitto/data:/mosquitto/data
-      - /opt/SP/mosquitto/log:/mosquitto/log
+      - {LOCAL_PATH_CONFIG}:/mosquitto/config
+      - {LOCAL_PATH_DATA}:/mosquitto/data
+      - {LOCAL_PATH_LOG}:/mosquitto/log
     ports:
       - 1883:1883
-      - 8884:8884
       - 9001:9001
-      - 9004:9004
     restart: unless-stopped
